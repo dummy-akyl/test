@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> </title>
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+<style>
+    table, th, td {
+       border: 1px solid black;
+    }
+ </style>
+</head>
+
+<body> 
+    <div class="container">
+    
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">  
+                     <a href="index.html"> Home</a> 
+                </div>
+        
+                <div class="nav-link-wrapper">  
+                     <a href="moon.html"> Astrophotography</a> 
+                </div>
+                <div class="nav-link-wrapper">  
+                    <a href="trip.html"> Trip </a> 
+               </div>
+       
+               <div class="nav-link-wrapper">  
+                    <a href="bird.html"> Bird </a>
+               </div>    
+
+                <div class="nav-link-wrapper">  
+                        <a href="victoria home.html"> Victoria Home </a>  
+                </div>
+
+                <div class="nav-link-wrapper">  
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Game</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="game1.html">Blackjack</a>
+                          <a href="rps.html">Rock, Paper, Scissors</a>
+                        </div>
+                      </div>
+                  </div>
+
+
+            </div>    
+
+            <div class="right-side">
+                <div class="brand"> 
+                    <div>ANDREW LEUNG</div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="container-3">
+
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="img/rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="img/paper.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="img/scissors.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+    
+    
+    
+
+  <script src="script.js"></script>
+    
+</body>
+
+
+
+</html>
+
+
+
+
+

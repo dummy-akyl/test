@@ -1,0 +1,243 @@
+/* Master Style */
+
+body{
+    
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding :38px;
+      
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper> .left-side> div{
+    margin-right: 20px;
+    font-size : 0.9em;
+    text-transform: uppercase;
+
+}
+
+.nav-link-wrapper {
+     height: 22px;
+     border-bottom: 1px solid transparent;
+     transition: border-bottom 0.5s;
+
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+ 
+.nav-link-wrapper a:hover{
+    color: black;
+}
+    
+
+/* Portfolio Style */
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: green
+
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.profile-image-wrapper img{
+    width: 100%;
+
+}
+
+.profile-content-wrapper{
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: lightseagreen;
+}
+
+.container-1,.container-2,.container-3,.container-4,.container-5{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+  }
+  
+  
+.flex-box-container-1,.flex-box-pick-color,.flex-blackjack-row-1,
+   .flex-blackjack-row-2,.flex-blackjack-row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+  
+.flex-blackjack-row-1,.flex-blackjack-row-2{
+    background: url(image/table.jpg) center;
+    color:#ffffff;
+}
+  
+.flex-blackjack-row-1 img{
+     width: 25%;
+     padding: 10px;
+  
+}
+     
+.flex-blackjack-row-2 button{
+    border: 1px solid  black;
+}
+  
+.flex-blackjack-row-2 div{
+    border: 1px solid black;
+}
+
+.table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.flex-blackjack-row-1 div{
+     border: 1px solid black;
+     padding: 10px;
+     flex: 1;
+     text-align:center;
+     height: 350px;
+  
+}
+  
+.flex-box-container-1 div{
+      display: flex;
+      padding: 10px;
+      border: 1px solid black;
+      align-items: center;
+}
+  
+  
+.flex-box-container-2 {
+    display: flex;
+    border: 1px solid blue;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+  
+.flex-box-container-2 img{
+      margin: 10px;
+      border: 1px solid green;
+      box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+}
+  
+.flex-box-rps {
+    display: flex;
+    border: 1px solid blue;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+  
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+  
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
